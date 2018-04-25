@@ -609,6 +609,7 @@
     <Content Include="Scripts\fullcalendar\locale\vi.js" />
     <Content Include="Scripts\fullcalendar\locale\zh-cn.js" />
     <Content Include="Scripts\fullcalendar\locale\zh-tw.js" />
+    <Content Include="Scripts\JavaScript.js" />
     <Content Include="Scripts\jquery-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.0.min.js" />
     <Content Include="Scripts\jquery-2.0.0.min.map" />

@@ -249,6 +249,14 @@
     <Compile Include="Migrations\201803231911423_StartingMonthlySummary.Designer.cs">
       <DependentUpon>201803231911423_StartingMonthlySummary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804271452449_work.cs" />
+    <Compile Include="Migrations\201804271452449_work.Designer.cs">
+      <DependentUpon>201804271452449_work.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804271507399_pleas.cs" />
+    <Compile Include="Migrations\201804271507399_pleas.Designer.cs">
+      <DependentUpon>201804271507399_pleas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -265,6 +273,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\marquee.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.css" />
@@ -618,6 +627,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\marquee3k.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\moment-with-locales.js" />
     <Content Include="Scripts\moment-with-locales.min.js" />
@@ -993,6 +1003,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803231911423_StartingMonthlySummary.resx">
       <DependentUpon>201803231911423_StartingMonthlySummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804271452449_work.resx">
+      <DependentUpon>201804271452449_work.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804271507399_pleas.resx">
+      <DependentUpon>201804271507399_pleas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

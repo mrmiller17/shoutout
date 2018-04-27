@@ -14,5 +14,6 @@ namespace ShoutoutProgram.Models
         public DateTime? End { get; set; }
         public string ThemeColor { get; set; }
         public bool IsFullDay { get; set; }
+        public bool IsTicker { get; set; }
     }
 }

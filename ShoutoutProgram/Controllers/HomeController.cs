@@ -70,6 +70,7 @@ namespace ShoutoutProgram.Controllers
                         v.Description = e.Description;
                         v.IsFullDay = e.IsFullDay;
                         v.ThemeColor = e.ThemeColor;
+                        v.IsTicker = e.IsTicker;
                     }
                 }
                 else

@@ -90,6 +90,26 @@ $.ajax({
 })
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //$(document).ready(function ()
 //{
 
@@ -122,7 +142,3 @@ $.ajax({
 
 
 
-
-
-//find and populate event ticker
-//$('.eventticker').append('')

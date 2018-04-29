@@ -948,6 +948,7 @@
     <Content Include="Views\Suggestions\Box.cshtml" />
     <Content Include="Views\Home\Events.cshtml" />
     <Content Include="Views\Shoutouts\MonthlySummary.cshtml" />
+    <Content Include="Views\Home\EventsIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

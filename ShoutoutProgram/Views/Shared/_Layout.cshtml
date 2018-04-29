@@ -66,6 +66,11 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="@Url.Action("Events", "Home")">Provalus Events </a></li>
+							@if (ViewContext.HttpContext.User.IsInRole("Admin"))
+							{
+								<li role="separator" class="divider"></li>
+								<li><a href="@Url.Action("EventsIndex", "Home")">Event Index</a></li>
+							}
 						</ul>
 					</li>
 					@*<li>@Html.ActionLink("Roles", "Index", "Roles")</li>*@
@@ -73,18 +78,44 @@
 				@Html.Partial("_LoginPartial")
 			</div>
 		</div>
-		
+
 		@*the below is in control of the ticker plugin and formating*@
 		<div class="marquee3k" style="background-color: rgb(210, 35, 42); border-top: groove; clear: left; " data-pausable="true" data-speed="1">
-		 <p class="appMe" style=""></p>
-		 <div style="background-color: white; width: 10%; border-top: groove; float:left;
+			<p class="appMe" style="color: white"></p>
+			<div style="background-color: white; width: 10%; border-top: groove; float:left;
     position:fixed;
     z-index:10;">
-		 	<p >Upcoming Events</p>
-		 </div>
-	</div>
+				<p>Upcoming Events</p>
+			</div>
 		</div>
+		@*end of ticker*@
+	</div>
 	<br />
+
+	@if (ViewContext.HttpContext.User.IsInRole("Admin"))
+	{
+		<br />
+		<br />
+		<div id="shoutoutsummary" style="clear: left">
+			<div style="float:left; width: 20%; text-align: center" class="monthly">
+				<p>
+					Shoutouts this month:
+				</p>
+				<p class="monthinsert">
+					insert number here
+				</p>
+			</div>
+			<div style="float:right; width: 20%; text-align: center" class="quarterly">
+				<p>
+					Shoutouts this quarter
+				</p>
+				<p class="quarterinsert">
+					insert number here
+				</p>
+			</div>
+			<div style="float: right"></div>
+		</div>
+	}
 	<br />
 	<div class="container body-content" style="clear:left">
 		@RenderBody()

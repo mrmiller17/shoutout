@@ -19,6 +19,26 @@ namespace ShoutoutProgram.Controllers
             return View();
         }
 
+        public ActionResult EventsIndex()
+        {
+            var allEvents = db.Events;
+            return View(allEvents);
+        }
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //[Authorize(Roles = "Admin")]
+        //public ActionResult Edit([Bind(Include = "EventId,Subject,Description,Start,End,ThemeColor,IsFullDay,IsTicker")] Event @event)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Entry(@event).State = EntityState.Modified;
+        //        db.SaveChanges();
+        //        return RedirectToAction("EventsIndex");
+        //    }
+        //    return View(@event);
+        //}
+
         // ActionResult for feed of shoutouts
 
         [Authorize]

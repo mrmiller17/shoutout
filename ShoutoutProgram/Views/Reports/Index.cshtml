@@ -1,0 +1,49 @@
+﻿
+@{
+	ViewBag.Title = "Reports";
+}
+
+<h2 style="clear: left">Report</h2>
+<div id="shoutoutsummary" style="clear: left">
+	<div style="float:left; width: 20%; text-align: center" class="monthly">
+		<p>
+			Shoutouts this month:
+		</p>
+		<p class="monthinsert">
+
+		</p>
+	</div>
+	<div style="float:right; width: 20%; text-align: center" class="quarterly">
+		<p>
+			Shoutouts this quarter
+		</p>
+		<p class="quarterinsert">
+
+		</p>
+	</div>
+	<div style="float: right"></div>
+</div>
+<br />
+<br />
+<table id="myTable" class="ui celled table" style="width:100%">
+	<thead>
+		<tr>
+			<th>
+				First Name:
+			</th>
+			<th>
+				Last Name:
+			</th>
+			<th>
+				points:
+			</th>
+		</tr>
+	</thead>
+
+
+	<tbody id="tb"></tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/alasql@0.4"></script>
+<script src="~/Scripts/report.js"></script>
+

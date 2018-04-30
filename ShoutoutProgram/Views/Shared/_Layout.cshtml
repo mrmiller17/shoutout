@@ -72,62 +72,42 @@
 								<li><a href="@Url.Action("EventsIndex", "Home")">Event Index</a></li>
 							}
 						</ul>
-					</li>
+						@if (ViewContext.HttpContext.User.IsInRole("Admin"))
+						{
+						<li><a href="@Url.Action("Index", "Reports")">Report</a></li>
+					}
 					@*<li>@Html.ActionLink("Roles", "Index", "Roles")</li>*@
-				</ul>
-				@Html.Partial("_LoginPartial")
+					</ul>
+					@Html.Partial("_LoginPartial")
+				</div>
 			</div>
-		</div>
 
-		@*the below is in control of the ticker plugin and formating*@
-		<div class="marquee3k" style="background-color: rgb(210, 35, 42); border-top: groove; clear: left; " data-pausable="true" data-speed="1">
-			<p class="appMe" style="color: white"></p>
-			<div style="background-color: white; width: 10%; border-top: groove; float:left;
+			@*the below is in control of the ticker plugin and formating*@
+			<div class="marquee3k" style="background-color: rgb(210, 35, 42); border-top: groove; clear: left; " data-pausable="true" data-speed="1">
+				<p class="appMe" style="color: white"></p>
+				<div style="background-color: white; width: 10%; border-top: groove; float:left;
     position:fixed;
     z-index:10;">
-				<p>Upcoming Events</p>
+					<p>Upcoming Events</p>
+				</div>
 			</div>
+			@*end of ticker*@
 		</div>
-		@*end of ticker*@
-	</div>
-	<br />
-
-	@if (ViewContext.HttpContext.User.IsInRole("Admin"))
-	{
 		<br />
 		<br />
-		<div id="shoutoutsummary" style="clear: left">
-			<div style="float:left; width: 20%; text-align: center" class="monthly">
-				<p>
-					Shoutouts this month:
-				</p>
-				<p class="monthinsert">
-					insert number here
-				</p>
+		<div class="container body-content">
+			<div>
+				@RenderBody()
+				<hr style="clear:left" />
+				<footer>
+					<p>&copy; @DateTime.Now.Year - Shoutout</p>
+				</footer>
 			</div>
-			<div style="float:right; width: 20%; text-align: center" class="quarterly">
-				<p>
-					Shoutouts this quarter
-				</p>
-				<p class="quarterinsert">
-					insert number here
-				</p>
-			</div>
-			<div style="float: right"></div>
 		</div>
-	}
-	<br />
-	<div class="container body-content" style="clear:left">
-		@RenderBody()
-		<hr />
-		<footer>
-			<p>&copy; @DateTime.Now.Year - Shoutout</p>
-		</footer>
-	</div>
-
-	@RenderSection("scripts", required: false)
-</body>
+		@RenderSection("scripts", required: false)
+	</body>
 </html>
+
 <script src="~/Scripts/marquee3k.js"></script>
-<script src="~/Scripts/JavaScript.js"></script>
+<script src="~/Scripts/Layout.js"></script>
 

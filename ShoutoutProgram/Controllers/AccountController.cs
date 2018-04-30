@@ -21,6 +21,16 @@ namespace ShoutoutProgram.Controllers
             db = new ApplicationDbContext();
         }
 
+        [Authorize(Roles = "Admin")]
+        public JsonResult GetUsers()
+        {
+            using (new ApplicationDbContext())
+            {
+                
+                var users = db.Users.ToList();
+                return new JsonResult { Data = users, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+            }
+        }
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
@@ -514,5 +524,7 @@ namespace ShoutoutProgram.Controllers
             }
         }
         #endregion
+
+        
     }
 }

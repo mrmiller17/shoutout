@@ -72,7 +72,6 @@ $.ajax({
 				$('.appMe').append( '| | | |' + datahold.title + ' : ' + datahold.description + '| | | |')
 				}
 		});
-		console.log(my_data[0]);
 		if (my_data[0] !== undefined) {
 			$('.marquee3k').show();
 			try {
@@ -90,6 +89,26 @@ $.ajax({
 })
 
 
+
+
+
+
+//var users = []
+//$.ajax({
+//	type: "GET",
+//	url: "Account/GetUsers",
+//	success: function (data)
+//	{
+//		$.each(data, function (i, v)
+//		{
+//			users.push({
+//				userFName: v.FirstName,
+//				userLName: v.LastName
+//			});
+//		}) 
+//		console.log(users)
+//	},
+//})
 
 
 

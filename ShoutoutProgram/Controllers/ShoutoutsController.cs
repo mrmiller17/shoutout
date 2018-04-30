@@ -187,6 +187,16 @@ namespace ShoutoutProgram.Controllers
             return View(shoutout);
         }
 
+        
+        public JsonResult GetShoutouts()
+        {
+            using (db)
+            {
+                var shoutouts = db.Shoutouts.ToList();
+                return new JsonResult { Data = shoutouts, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+            }
+        }
+
         // POST: Shoutouts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -259,5 +269,7 @@ namespace ShoutoutProgram.Controllers
         }
 
         #endregion
+
+        
     }
 }

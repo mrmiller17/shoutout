@@ -274,6 +274,15 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon-114x114.png" />
+    <Content Include="favicon-120x120.png" />
+    <Content Include="favicon-144x144.png" />
+    <Content Include="favicon-152x152.png" />
+    <Content Include="favicon-32x32.png" />
+    <Content Include="favicon-57x57.png" />
+    <Content Include="favicon-72x72.png" />
+    <Content Include="favicon-76x76.png" />
+    <Content Include="favicon.png" />
     <Content Include="Scripts\marquee.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />

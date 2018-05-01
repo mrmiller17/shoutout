@@ -216,27 +216,27 @@ function reload()
 						level: v.LevelId
 					});
 				}
-				
+				console.log(Q2)
 				switch (month) {
 					case 1:
 					case 2:
 					case 3:
-						if (currentyear === year) { Q1 += v.LevelId }
+						if (currentyear === year) { Q1 += 1 }
 						break;
 					case 4:
 					case 5:
 					case 6:
-						if (currentyear === year) { Q2 += v.LevelId; }
+						if (currentyear === year) { Q2 += 1 }
 						break;
 					case 7:
 					case 8:
 					case 9:
-						if (currentyear === year) { Q3 += v.LevelId }
+						if (currentyear === year) { Q3 += 1 }
 						break;
 					case 10:
 					case 11:
 					case 12:
-						if (currentyear === year) { Q4 += v.LevelId }
+						if (currentyear === year) { Q4 += 1 }
 						break;
 				}
 

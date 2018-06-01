@@ -18,7 +18,7 @@ namespace ShoutoutProgram.Controllers
         {
             return View();
         }
-
+        [Authorize(Roles = "Admin")]
         public ActionResult EventsIndex()
         {
             var allEvents = db.Events;

@@ -52,7 +52,7 @@ $(document).ready(function ()
 					@Html.DisplayFor(modelIteam => item.Subject)
 				</td>
 				<td>
-					@Html.DisplayFor(modelIteam => item.Description)
+					@Html.EditorFor(modelIteam => item.Description)
 				</td>
 				<td>
 					@Html.DisplayFor(modelItem => item.Start)
@@ -67,7 +67,7 @@ $(document).ready(function ()
 					@Html.DisplayFor(modelItem => item.IsFullDay)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem => item.IsTicker)
+					@Html.EditorFor(modelItem => item.IsTicker)
 				</td>
 			</tr>
 		}

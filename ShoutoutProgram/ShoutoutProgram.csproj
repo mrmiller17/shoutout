@@ -278,10 +278,13 @@
     <Compile Include="Migrations\201805011541468_resetdb.Designer.cs">
       <DependentUpon>201805011541468_resetdb.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\201806131305555_dodo.cs" />
     <Compile Include="Migrations\201806131305555_dodo.Designer.cs">
       <DependentUpon>201806131305555_dodo.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> eac7c5282239f6f182a4dd69e4a7a1f1412b49ed
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -1067,9 +1070,12 @@
     <EmbeddedResource Include="Migrations\201805011541468_resetdb.resx">
       <DependentUpon>201805011541468_resetdb.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201806131305555_dodo.resx">
       <DependentUpon>201806131305555_dodo.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> eac7c5282239f6f182a4dd69e4a7a1f1412b49ed
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

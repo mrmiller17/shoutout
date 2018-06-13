@@ -25,7 +25,11 @@
 	<link rel="apple-touch-icon" sizes="120x120" href="~/Images/favicon-120x120.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="~/Images/favicon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="~/Images/favicon-152x152.png">
+<<<<<<< HEAD
 
+=======
+			   
+>>>>>>> eac7c5282239f6f182a4dd69e4a7a1f1412b49ed
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="/favicon-144x144.png">
 	<meta name="application-name" content="Website Title">
@@ -102,6 +106,7 @@
 			<li><a href="@Url.Action("Index", "Reports")">Report</a></li>
 					}
 
+<<<<<<< HEAD
 			@*<li>@Html.ActionLink("Roles", "Index", "Roles")</li>*@
 				</ul>
 					}
@@ -128,6 +133,29 @@
 						<p>&copy; @DateTime.Now.Year - Shoutout</p>
 					</footer>
 				</div>
+=======
+
+
+
+		</div>
+		@*the below is in control of the ticker plugin and formating*@
+		@if (User.Identity.IsAuthenticated)
+		{
+			<div class="marquee3k" style="background-color: rgb(210,25,32); border-top-style:groove; width:100%" data-pausable="true" data-speed="1">
+				<p class="appMe" style="color: white; font-size: 20px;">****There are no upcoming events.****</p>
+				
+			</div>
+		}
+		@*end of ticker*@
+		<div class="container body-content">
+
+			<div>
+				@RenderBody()
+				<hr style="clear:left" />
+				<footer>
+					<p>&copy; @DateTime.Now.Year - Shoutout</p>
+				</footer>
+>>>>>>> eac7c5282239f6f182a4dd69e4a7a1f1412b49ed
 			</div>
 			@RenderSection("scripts", required: false)
 		</body>

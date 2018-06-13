@@ -7,8 +7,11 @@ window.onload = function ()
 	timeoutTimer = setTimeout("IdleTimeout()", timout);
 	refresh();//used with alexa
 	marq();
+<<<<<<< HEAD
 	Marquee3k.init();
 	Marquee3k.refreshAll();
+=======
+>>>>>>> eac7c5282239f6f182a4dd69e4a7a1f1412b49ed
 }
 
 
@@ -83,7 +86,11 @@ var marq = function ()
 					$('.appMe').append('****' + datahold.title + ' : ' + datahold.description + '****')
 				}
 			});
+<<<<<<< HEAD
 					
+=======
+					Marquee3k.init();
+>>>>>>> eac7c5282239f6f182a4dd69e4a7a1f1412b49ed
 		},
 		error: function (error)
 		{

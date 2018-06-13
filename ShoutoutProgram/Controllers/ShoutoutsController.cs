@@ -93,7 +93,7 @@ namespace ShoutoutProgram.Controllers
                     Recipients = viewModel.Recipients,
                     DateTime = DateTime.Now,
                     LevelId = viewModel.Level,
-                    Project = viewModel.Project,
+                    Project = viewModel.Giver,
                     Description = viewModel.Description
                 };
 
@@ -131,7 +131,7 @@ namespace ShoutoutProgram.Controllers
                 ShoutoutId = shoutout.ShoutoutId,
                 Description = shoutout.Description,
                 DateTime = shoutout.DateTime,
-                Project = shoutout.Project,
+                Giver = shoutout.Project,
                 Recipient = shoutout.RecipientId,
                 Levels = db.Levels.ToList(),
                 Level = shoutout.LevelId,
@@ -150,7 +150,7 @@ namespace ShoutoutProgram.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public ActionResult Edit([Bind(Include = "ShoutoutId,FirstName,LastName,Recipient,DateTime,Project,Level,Description")] Shoutout shoutout)
+        public ActionResult Edit([Bind(Include = "ShoutoutId,Description,DateTime,Giver,Recipient,Levels,Level,Repients")] ShoutoutFormViewModel shoutout)
         {
             if (ModelState.IsValid)
             {

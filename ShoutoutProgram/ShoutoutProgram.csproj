@@ -250,6 +250,18 @@
     <Compile Include="Migrations\201803231911423_StartingMonthlySummary.Designer.cs">
       <DependentUpon>201803231911423_StartingMonthlySummary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804261814213_ticker.cs" />
+    <Compile Include="Migrations\201804261814213_ticker.Designer.cs">
+      <DependentUpon>201804261814213_ticker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804261859528_try.cs" />
+    <Compile Include="Migrations\201804261859528_try.Designer.cs">
+      <DependentUpon>201804261859528_try.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804261906423_eventupdate.cs" />
+    <Compile Include="Migrations\201804261906423_eventupdate.Designer.cs">
+      <DependentUpon>201804261906423_eventupdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201804271452449_work.cs" />
     <Compile Include="Migrations\201804271452449_work.Designer.cs">
       <DependentUpon>201804271452449_work.cs</DependentUpon>
@@ -257,6 +269,18 @@
     <Compile Include="Migrations\201804271507399_pleas.cs" />
     <Compile Include="Migrations\201804271507399_pleas.Designer.cs">
       <DependentUpon>201804271507399_pleas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805011532024_missingisticker.cs" />
+    <Compile Include="Migrations\201805011532024_missingisticker.Designer.cs">
+      <DependentUpon>201805011532024_missingisticker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805011541468_resetdb.cs" />
+    <Compile Include="Migrations\201805011541468_resetdb.Designer.cs">
+      <DependentUpon>201805011541468_resetdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806131305555_dodo.cs" />
+    <Compile Include="Migrations\201806131305555_dodo.Designer.cs">
+      <DependentUpon>201806131305555_dodo.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -274,15 +298,17 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="favicon-114x114.png" />
-    <Content Include="favicon-120x120.png" />
-    <Content Include="favicon-144x144.png" />
-    <Content Include="favicon-152x152.png" />
-    <Content Include="favicon-32x32.png" />
-    <Content Include="favicon-57x57.png" />
-    <Content Include="favicon-72x72.png" />
-    <Content Include="favicon-76x76.png" />
-    <Content Include="favicon.png" />
+    <Content Include="addtohomescreen.css" />
+    <Content Include="Images\favicon-114x114.png" />
+    <Content Include="Images\favicon-120x120.png" />
+    <Content Include="Images\favicon-144x144.png" />
+    <Content Include="Images\favicon-152x152.png" />
+    <Content Include="Images\favicon-32x32.png" />
+    <Content Include="Images\favicon-57x57.png" />
+    <Content Include="Images\favicon-72x72.png" />
+    <Content Include="Images\favicon-76x76.png" />
+    <Content Include="Images\favicon.png" />
+    <Content Include="Scripts\addtohomescreen.js" />
     <Content Include="Scripts\marquee.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -452,7 +478,7 @@
     <Content Include="Content\semantic.css" />
     <Content Include="Content\semantic.min.css" />
     <Content Include="Content\semantic.site.css" />
-    <Content Include="favicon.ico" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="fonts\basic.icons.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\icons.svg" />
@@ -851,7 +877,9 @@
     <Content Include="semantic\uncompressed\views\list.css" />
     <Content Include="semantic\uncompressed\views\sitemap.css" />
     <Content Include="semantic\uncompressed\views\statistic.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -1018,11 +1046,29 @@
     <EmbeddedResource Include="Migrations\201803231911423_StartingMonthlySummary.resx">
       <DependentUpon>201803231911423_StartingMonthlySummary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804261814213_ticker.resx">
+      <DependentUpon>201804261814213_ticker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804261859528_try.resx">
+      <DependentUpon>201804261859528_try.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804261906423_eventupdate.resx">
+      <DependentUpon>201804261906423_eventupdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804271452449_work.resx">
       <DependentUpon>201804271452449_work.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804271507399_pleas.resx">
       <DependentUpon>201804271507399_pleas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805011532024_missingisticker.resx">
+      <DependentUpon>201805011532024_missingisticker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805011541468_resetdb.resx">
+      <DependentUpon>201805011541468_resetdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806131305555_dodo.resx">
+      <DependentUpon>201806131305555_dodo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -13,8 +13,8 @@ namespace ShoutoutProgram.Models
         public IEnumerable<ApplicationUser> Recipients { get; set; }
 
         [Required]
-        [StringLength(140)]
-        public string Project { get; set; }
+        [StringLength(100)]
+        public string Giver { get; set; }
 
         [Required]
         public DateTime DateTime { get; set; }

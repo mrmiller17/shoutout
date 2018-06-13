@@ -99,7 +99,7 @@ namespace ShoutoutProgram.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public ActionResult Edit([Bind(Include = "Id,Name,EmailAddress,PhoneNumber,Description")] Suggestion suggestion)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateTime,Description")] Suggestion suggestion)
         {
             if (ModelState.IsValid)
             {
